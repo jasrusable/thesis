@@ -31,13 +31,14 @@ The purpose of this project is to try to resolve the position of a camera by com
 Programing will be done in C++ as this language is very popular and fast. C++ has a large community and has support in many popular libraries. OpenCV is one such library which will be made use of for this project. OpenCV is aimed mainly at real-time computer vision and has been under active development since 2000. OpenCV has support for many different programming languages such as C, C++, Pyhton and Java. OpenCV is also capable of running on mobile operating systems Andriod and iOS, so there is a possibility of extending the outcomes of this project into the mobile app market.
 
 \section{Problem Statement}
-\paragraph{}
-Can one reliably and accurately determine the location of an unknown position by comparing an image taken from that unknown point to a digital surface model? This would enable a person to be able to determine their position in space without the need for GPS, so this also has indoor applications as well.
+The coordinates of an unkown point need to be resolved by taking two photographs form the unknown point of objects which are represented in a digital surface model. A program will need to be created in order to match the images of the objects to the ojects mapped on the digital surface model.
 
 \section{Objectives}
 
+\Create a $m^3$ coordinate system out of cardboard in which to perform experiments and tests in.
+
 \paragraph{}
-Be able to create a simple digital surface model of two regular objects on a plane. 
+Be able to create a simple digital surface model of two regular objects within the cardboard coordinate system.
 
 \paragraph{}
 Be able to recognize and identify the sides of a resolved Rubik's cube using OpenCV. I would do this by labelling each side of the cube using the colour as a key, and then supplying OpenCV with an image of each side and be able to have a program which can identify the side based on the colour.
@@ -46,6 +47,8 @@ Be able to recognize and identify the sides of a resolved Rubik's cube using Ope
 Be able to match an image of two Rubik's cubes
 
 \section{Questions}
+\paragraph{}
+Can one reliably and accurately determine the location of an unknown position by comparing images of objects taken from that unknown point to a digital surface model containing and reflecting those objects in it? This would enable a person to be able to determine their position in space without the need for GPS, this would also have indoor applications.
 
 
 \section{Methodology}

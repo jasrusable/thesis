@@ -3,7 +3,7 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 
-\title{Positioning using the comparison of images to digital surface models.}
+\title{Positioning using the comparison of images to digital surface models (or a point cloud?).}
 \date{2015}
 \author{Jason David Russell}
 
@@ -31,11 +31,16 @@ The purpose of this project is to try to resolve the position of a camera by com
 \paragraph{}
 Programing will be done in C++ as this language is very popular and fast. C++ has a large community and has support in many popular libraries. OpenCV is one such library which will be made use of for this project. OpenCV is aimed mainly at real-time computer vision and has been under active development since 2000. OpenCV has support for many different programming languages such as C, C++, Pyhton and Java. OpenCV is also capable of running on mobile operating systems Andriod and iOS, so there is a possibility of extending the outcomes of this project into the mobile app market.
 
+\newpage
+
 \section{Problem Statement}
 The coordinates of an unknown point need to be resolved by taking two photographs form the unknown point of objects which are represented in a digital surface model. A program will need to be created in order to match the images of the objects to the objects mapped on the digital surface model. By doing this, two lines will be resolved in the coordinate system of the digital surface model, these two lines should intersect where the camera was located when taking the two images.
 
+\newpage
+
 \section{Objectives}
 
+\paragraph{}
 Create a $m^3$ coordinate system out of cardboard in which to perform experiments and tests in.
 
 \paragraph{}
@@ -47,14 +52,17 @@ Be able to recognize and identify the sides of a resolved Rubik's cube using Ope
 \paragraph{}
 Be able to match an image of two Rubik's cubes to the digital surface model containing the cubes.
 
+\newpage
+
 \section{Questions}
 \paragraph{}
-Can one reliably and accurately determine the location of an unknown position by comparing images of objects taken from that unknown point to a digital surface model containing and reflecting those objects in it? This would enable a person to be able to determine their position in space without the need for GPS, this would also have indoor applications.
+Can one reliably and accurately determine the location of an unknown position by comparing images of objects taken from that unknown point to a digital surface model containing and reflecting those objects in it? This would enable a person to be able to determine the position of a camera in space without the need for GPS, this may also have real-time and indoor applications.
 
+\newpage
 
 \section{Methodology}
 
-
-
+\paragraph{}
+The most critical component of of this project is to be able to match identify objects in an image and be able to identify the same object on a digital surface model. I will attempt to solve this problem on a small scale initially. I plan to create a $m^3$ cardboard box which will contain a coordinate system on the inside, then I will place a regular object in a defined space in this box and create a digital surface model to reflect the scenario. Then, using a webcam and some programming I will try to determine the line from the camera to the object in the coordinate system.
 
 \end{document}

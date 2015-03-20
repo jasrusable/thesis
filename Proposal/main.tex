@@ -20,10 +20,10 @@
 
 \section{Background}
 \paragraph{}
-Personal digital consumer cameras have been with us for quite some time now. The rapid advancement of technology has led to the dramatic decrease in physical size of cameras as well as the rapid increase of image and lens quality, we carry high quality digital cameras with us every day in the form of our smart phone which can store hundreds of high quality images.
+Personal digital consumer cameras have been with us for quite some time now. The rapid advancement of technology has led to the dramatic decrease in physical size of cameras as well as the rapid increase of image and lens quality during recent years. We carry high quality digital cameras with us every day in the form of our smart phone which can store hundreds of high quality images, and we can transmit these photos effortlessly.
 
 \paragraph{}
-Digital surface models have become more and more prominent in recent years as the technology used for capturing data such as lidar has become more accessible and feasible for the consumer and prosumer. Digital surface models are typically created using stereo analysis of images, contour analysis or from point clouds. Digital surface models are readily available in South Africa from the NGI.
+Digital surface models have become more and more prominent in recent years as the technology used for capturing data such as lidar has become more accessible (faster scans, better scans) and feasible for the consumer and prosumer. Digital surface models are typically created using stereo analysis of images, contour analysis or from point clouds. Digital surface models are readily available in South Africa from the NGI.
 
 \paragraph{}
 The purpose of this project is to try to resolve the position of a camera by comparing two different images taken from the same point in 2D against a digital surface model to obtain two lines in 2D which can then be intersected to obtain the position of the camera. A secondary purpose, assuming the primary purpose has been achieved, would be to investigate and compare the precisions and accuracies of the various different ways of positioning in outdoor and indoor situations. (such as resection, intersection, GPS fix, etc) An additional purpose would be to determine and explore the applications of resolving position using imagery and digital surface models.
@@ -34,7 +34,7 @@ Programing will be done in C++ as this language is very popular and fast. C++ ha
 \newpage
 
 \section{Problem Statement}
-The coordinates of an unknown point need to be resolved by taking two photographs form the unknown point of objects which are represented in a digital surface model. A program will need to be created in order to match the images of the objects to the objects mapped on the digital surface model. By doing this, two lines will be resolved in the coordinate system of the digital surface model, these two lines should intersect where the camera was located when taking the two images.
+The coordinates of an unknown point need to be resolved by taking two photographs form the unknown point of objects which are represented in a digital surface model. A program will need to be created in order to match the images of the objects to the objects mapped on the digital surface model. By doing this, two lines will be resolved in the coordinate system of the digital surface model, these two lines should intersect where the camera was located when taking the two images, this should provide a coordinate estimate of where the camera was when the photos were taken.
 
 \newpage
 
@@ -63,6 +63,6 @@ Can one reliably and accurately determine the location of an unknown position by
 \section{Methodology}
 
 \paragraph{}
-The most critical component of of this project is to be able to match identify objects in an image and be able to identify the same object on a digital surface model. I will attempt to solve this problem on a small scale initially. I plan to create a $m^3$ cardboard box which will contain a coordinate system on the inside, then I will place a regular object in a defined space in this box and create a digital surface model to reflect the scenario. Then, using a webcam and some programming I will try to determine the line from the camera to the object in the coordinate system.
+The most critical component of of this project is to be able to match identify objects in an image and be able to identify the same object on a digital surface model. I will attempt to solve this problem on a small scale initially. I plan to create a $m^3$ cardboard box which will contain a coordinate system on the inside, then I will place a regular object in a defined space in this box and create a digital surface model to reflect the scenario. Then, using a webcam and some programming I will try to determine the line from the camera to the object in the coordinate system. 
 
 \end{document}

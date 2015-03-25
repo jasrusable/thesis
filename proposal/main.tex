@@ -15,47 +15,25 @@
 \newpage
 \tableofcontents
 
-
-\newpage
 \pagenumbering{arabic}
 
-\section{Abstract}
-\paragraph{}
-The purpose of this project is to try to resolve the position of a camera by comparing images taken from the same point in 2D against a digital surface model to obtain lines in 2D which can then be intersected to obtain the position of the camera. A secondary purpose, assuming the primary purpose has been achieved, would be to investigate and compare the precisions and accuracies of the various different ways of positioning in outdoor and indoor scenarios (such as resection, intersection, GPS fix, etc). An additional purpose would be to determine and explore the applications of resolving position using imagery and digital surface models.
 
 \newpage
-
-\section{Background}
-Personal digital consumer cameras have been with us for quite some time now. The rapid advancement of technology has led to the dramatic decrease in physical size of cameras as well as the rapid increase of image and lens quality during recent years. We carry high quality digital cameras with us every day in the form of our smart phone which can store hundreds of high quality images, and we can transmit and receive these photos effortlessly.
-
-\paragraph{}
-Digital surface models have become more and more prominent in recent years as the technology used for capturing data such as lidar has become more accessible (faster scans, better scans) and feasible for the consumer and prosumer. Digital surface models are typically created using stereo analysis of images, contour analysis or from point clouds. Digital surface models are readily available in South Africa from the NGI.
+\input{abstract.tex}
 
 \newpage
-
-\section{Problem Statement}
-The coordinates of an unknown point are to be resolved by taking multiple photographs form the unknown point of surrounding objects which will be represented in a digital surface model. A program will need to be created in order to match the images of the objects to the objects mapped on the digital surface model. By doing this, lines will be resolved in the coordinate system of the digital surface model, these lines should intersect where the camera was located when taking the photographs, this should provide a coordinate estimate of where the camera was when the photographs were taken.
+\input{background.tex}
 
 \newpage
-
-\section{Objectives}
-\subsection{Main objective}
-The main objective of this project is essentially to be able to perform a resection by comparing photographs taken from an unknown point of objects which exist in a digital surface model. Having been supplied with images and a digital surface model, one would have to use image recognition to be able to determine the center line 
-
+\input{problem_statement.tex}
 
 \newpage
-
-\section{Questions}
-
-Can one reliably and accurately determine the location of an unknown position by comparing images of objects taken from that unknown point to a digital surface model containing and reflecting those objects in it? This would enable a person to be able to determine the position of a camera in space without the need for GPS, this may also have real-time and indoor applications.
+\input{objectives.tex}
 
 \newpage
+\input{questions.tex}
 
-\section{Methodology}
-
-The most critical component of of this project is to be able to match identify objects in an image and be able to identify the same object on a digital surface model. I will attempt to solve this problem on a small scale initially. I plan to create a $m^3$ cardboard box which will contain a coordinate system on the inside, then I will place a regular object in a defined space in this box and create a digital surface model to reflect the scenario. Then, using a webcam and some programming I will try to determine the line from the camera to the object in the coordinate system.
-
-\paragraph{}
-Programing will be done in C++ as this language is very popular and fast. C++ has a large community and has support in many popular libraries. OpenCV is one such library which will be made use of for this project. OpenCV is aimed mainly at real-time computer vision and has been under active development since 2000. OpenCV has support for many different programming languages such as C, C++, Pyhton and Java. OpenCV is also capable of running on mobile operating systems Andriod and iOS, so there is a possibility of extending the outcomes of this project into the mobile app market.
+\newpage
+\input{methodology.tex}
 
 \end{document}

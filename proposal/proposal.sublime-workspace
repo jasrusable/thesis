@@ -7,6 +7,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "main.tex",
+			"settings":
+			{
+				"buffer_size": 585,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -39,10 +47,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 72.0,
-		"last_filter": "instal",
+		"height": 132.0,
+		"last_filter": "settings",
 		"selected_items":
 		[
+			[
+				"settings",
+				"Preferences: Settings - User"
+			],
 			[
 				"instal",
 				"Package Control: Install Package"
@@ -85,11 +97,15 @@
 	},
 	"expanded_folders":
 	[
-		"/home/jason/git/thesis/proposal"
+		"/home/jason/git/thesis/proposal",
+		"/home/jason/git/thesis/proposal/includes"
 	],
 	"file_history":
 	[
+		"/home/jason/git/thesis/proposal/includes/abstract.tex",
+		"/home/jason/git/thesis/proposal/main.tex",
 		"/home/jason/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/jason/git/thesis/proposal/includes/questions.tex",
 		"/home/jason/git/thesis/proposal/methodology.tex",
 		"/home/jason/git/thesis/proposal/objectives.tex",
 		"/home/jason/git/thesis/proposal/problem_statement.tex",
@@ -97,7 +113,6 @@
 		"/home/jason/git/thesis/proposal/background.tex",
 		"/home/jason/git/thesis/proposal/abstract.tex",
 		"/home/jason/.config/sublime-text-3/Packages/User/LaTeXTools.sublime-settings",
-		"/home/jason/git/thesis/proposal/main.tex",
 		"/home/jason/git/thesis/proposal/main.pdf",
 		"/home/jason/git/thesis/Proposal/main.tex",
 		"/home/jason/git/quicktorrent/seedboxes.txt"
@@ -135,8 +150,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "main.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 585,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -192,6 +236,18 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"abs",
+				"includes/abstract.tex"
+			],
+			[
+				"main",
+				"main.tex"
+			],
+			[
+				"que",
+				"includes/questions.tex"
+			]
 		],
 		"width": 0.0
 	},
@@ -220,7 +276,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 254.0,
 	"status_bar_visible": true,
 	"template_settings":

@@ -27,6 +27,7 @@
 *.out
 *.app
 
+# Latex cruft
 *.aux
 *.fdb_latexmk
 *.fls

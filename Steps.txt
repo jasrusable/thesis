@@ -1,0 +1,21 @@
+
+Steps:
+1.) Obatain 3D model of an environment.
+2.) Obtain a source image which is an image of a scene within the environment.
+3.) Create an image sequence from the model.
+	Notes:
+		1. Blender has the ability to create image sequences from an animation of a model.
+	Assumptions:
+		1. The image sequance should be about a single point in the model.
+		2. The source image should be taken from the same point as where the image sequnce was generated from.
+4.) Use OpenCV to compare the source image to the images in the image sequence.
+	Notes:
+		1. Which OpenCV function will be used to compare the source image to the images in the sequence?
+			- Template matching 
+				- A template needs to be provided for comparason.
+			- Feature matching
+				- This is more promising.
+
+	Issues:
+		1. Source image and images from the sequance are already taken from the same point.
+
